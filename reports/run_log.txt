@@ -1,0 +1,18 @@
+96,659 resolved orders · baseline failure rate 8.56% (8.09% late, 0.46% cancelled)
+734 cancelled orders have no item data and are reported separately
+Searched 11,946 segments · 668 pass significance + lift + interaction checks
+Top 8 de-duplicated drivers cover 59% of orders and 78% of failures:
+
+                                                                  segment  orders  fail_rate  lift  excess_failures     p_adj
+                                                purchase_quarter = 2018Q1   20750      0.151  1.76         1.36e+03         0
+                                                      customer_state = RJ   12369      0.139  1.63              665 1.11e-113
+                                              customer_region = Northeast    9046      0.147  1.71              552 3.51e-103
+                             route = same region & promised_days = 15-21d    7774      0.152  1.78              520 6.08e-105
+seller_region = Southeast & route = cross region & promised_days = 22-30d   12663      0.118  1.38              411  7.01e-43
+                        promised_days = <=14d & purchase_quarter = 2018Q3    5459       0.14  1.64              297  7.97e-48
+                          route = same region & purchase_quarter = 2017Q4    4854      0.144  1.68              282  4.39e-48
+                                route = same region & seller_size = large    6672      0.112  1.31              177  9.04e-15
+
+No single-attribute driver found in: basket_value, category, freight_share, installments, multi_seller, n_items, payment_type, promised_days, purchase_weekday, route, seller_region, seller_size, weight
+
+Wrote tables and figures to reports/
