@@ -2,7 +2,7 @@
 
 **Which orders fail, and why?** This is a reusable Python tool that searches every combination of order attributes for the segments that drive failed deliveries. It tests each segment for statistical significance and returns a short, de-duplicated list of drivers that operations can act on.
 
-The tool is demonstrated on ~97K orders from the public [Olist Brazilian e-commerce dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
+The tool is demonstrated on ~97K orders from the public [Olist Brazilian e-commerce dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce). **Run it on Kaggle:** [Order Failure Root Cause: BFS Segment Search](https://www.kaggle.com/code/timachan/order-failure-root-cause-bfs-segment-search)
 
 ![Top failure drivers](reports/figures/top_drivers.png)
 
